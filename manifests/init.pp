@@ -11,7 +11,7 @@ class envconsul (
     } ->
     staging::extract { 'envconsul.tar.gz':
         strip   => 0,
-        target  => "/opt",
+        target  => '/opt',
         creates => "/opt/envconsul_${version}_linux_amd64",
     } ->
     file { "/opt/hashicorp/envconsul_${version}_linux_amd64/envconsul":
@@ -20,8 +20,9 @@ class envconsul (
         group  => root,
         mode   => '0555',
     } ->
-    file { "/usr/local/bin/envconsul":
-        ensure => "link",
-        target => "/opt/envconsul_${version}_linux_amd64/envconsul",
+    file { '/usr/local/bin/envconsul':
+        ensure  => 'link',
+        target  => "/opt/envconsul_${version}_linux_amd64/envconsul",
+        require => File["/opt/hashicorp/envconsul_${version}_linux_amd64/envconsul"]
     }
 }
