@@ -1,12 +1,12 @@
 {
-  "name": "puppet-envconsul",
+  "name": "nubis-puppet-envconsul",
   "version": "0.1",
-  "author": "nubis",
+  "author": "limed",
   "summary": "Puppet module for deploying envconsul",
   "license": "MPL-2.0",
-  "source": "https://github.com/limed/puppet-envconsul",
-  "project_page": "https://github.com/limed/puppet-envconsul",
-  "issues_url": "https://github.com/limed/puppet-envconsul/issues",
+  "source": "https://github.com/nubisproject/nubis-puppet-envconsul",
+  "project_page": "https://github.com/nubisproject/nubis-puppet-envconsul",
+  "issues_url": "https://github.com/nubisproject/nubis-puppet-envconsul/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
